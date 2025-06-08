@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="generate-button">Generate Meme</button>
-    <div class="meme-conatiner">
-    <h1 class="meme-title">Loading... </h1>
-    <img class="meme-image">
-    <p class="author"></p></p>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-laugh-squint"></i> Meme Generator</h1>
+            <p>Get your daily dose of humor!</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="meme-container">
+                <div class="meme-placeholder" id="placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Click the button to generate a meme</p>
+                </div>
+                <img class="meme-image" alt="Generated meme">
+                <div class="meme-info">
+                    <h2 class="meme-title">Loading...</h2>
+                    <p class="author">Author: Unknown</p>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="generate-button">
+                    <i class="fas fa-random"></i> Generate Meme
+                </button>
+                <div class="loading-spinner hidden">
+                    <div class="spinner"></div>
+                    <span>Loading...</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="app-footer">
+            <p>Made with <i class="fas fa-heart"></i> for meme lovers</p>
+        </footer>
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
